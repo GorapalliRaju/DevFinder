@@ -14,11 +14,6 @@ const devRepos = document.querySelector("#repo-count")
 const devFollowing = document.querySelector("#following-count")
 const devFollowers = document.querySelector("#followers-count")
 
-const devLocation = document.querySelector("#dev-location")
-const devWebsite = document.querySelector("#dev-website")
-const devTwitter = document.querySelector("#dev-twitter")
-const devCompany = document.querySelector("#dev-company")
-
 const devImg = document.querySelector("#profile-photo")
 const theme = document.querySelector("#theme-slider")
 
@@ -37,20 +32,12 @@ const months = ["Jan",
                 "Nov", 
                 "Dec"]
 
-
-
-
 searchBtn.addEventListener('click', () => {
     if(searchInput.value !== "")
         fetchData(url + searchInput.value)
     else 
     searchInput.placeholder = "Enter a valid username ..."
 })
-
-
-
-
-
 
 searchInput.addEventListener("keydown", function (e) {
     if (!e) {
@@ -64,11 +51,6 @@ searchInput.addEventListener("keydown", function (e) {
     }
  );
 
-
-
-
-
-
 function fetchData(gitUrl) {
     fetch(gitUrl)
     .then((result) => result.json())
@@ -76,11 +58,6 @@ function fetchData(gitUrl) {
         updateData(data)
     })
 }
-
-
-
-
-
 
 function updateData(data) {
     devName.textContent = `${data.name}`
@@ -99,10 +76,6 @@ function updateData(data) {
         devFollowers.textContent =`${data.followers}`
     }
     
-    devLocation.textContent = `${data.location}`
-    devWebsite.textContent = `${data.email}`
-    devTwitter.textContent = `${data.twitter_username}`
-    devCompany.textContent = `${data.company}`
     devImg.src = `${data.avatar_url}`
     setdate(data)
 }
@@ -111,12 +84,6 @@ function setdate(data) {
     devJoin.textContent = `Joined ${date.getDate()} ${months[date.getMonth() - 1]} ${date.getFullYear()}`
 }
 
-
-
-
-
-
-
 theme.addEventListener('change', (event) => {
     if (event.currentTarget.checked) {
         applyLightTheme()
@@ -124,12 +91,6 @@ theme.addEventListener('change', (event) => {
         applyDarkTheme()
     }
 })
-
-
-
-
-
-
 
 function applyLightTheme() {
     root.setProperty("--dark-bg", "#F6F8FF")
