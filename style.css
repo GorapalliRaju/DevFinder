@@ -6,6 +6,19 @@
     --dark-text-alt: #A4A9B4;
     --dark-shadow: #1E2A47;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -26,6 +39,21 @@
 a {
     text-decoration: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -86,6 +114,21 @@ input:checked + .slider:before {
 .switch {
     scale: 0.8;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .search-bar {
     background: var(--dark-bg-content);
     padding: 0.8em 0.8em;
@@ -120,6 +163,21 @@ input:checked + .slider:before {
     border-radius: 10px;
     font-weight: 1000;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .dev-info {
     display: flex;
     flex-direction: row;
@@ -129,6 +187,11 @@ input:checked + .slider:before {
     border-radius: 15px;
     box-shadow: 0 0 20px var(--dark-shadow);
 }
+
+
+
+
+
 .dev-info-left {
     width: 25%;
     /* background: #fff000; */
@@ -140,6 +203,11 @@ input:checked + .slider:before {
     margin: 1em auto;
     border-radius: 50%;
 }
+
+
+
+
+
 .dev-info-right {
     margin: 0 0 0 3em;
     width: 75%;
@@ -203,10 +271,55 @@ input:checked + .slider:before {
     width: 20px;
     margin-right: 10px;
 }
+
+
+
+
+
+
+
+
+
+
+
+/* ============================================================================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
 .search-bar .search-btn:hover {
     background: #3f99ff;
     cursor: pointer;
 }
+
+
+
+
+
+
+
+
+
+
+
+/* =================================================================================================================================== */
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 758px) {
     * {
         box-sizing: border-box;
@@ -223,6 +336,16 @@ input:checked + .slider:before {
         align-items: center;
         flex-direction: column;
     }
+
+
+
+
+
+
+
+
+
+
     .header {
         display: flex;
         justify-content: space-between;
@@ -256,6 +379,17 @@ input:checked + .slider:before {
         font-size: 0.7rem;
         border-radius: 6px !important;
     }
+
+
+
+
+
+
+
+
+
+
+
     .dev-info {
         flex-direction: column;
         width: 100%;
@@ -305,6 +439,16 @@ input:checked + .slider:before {
         margin-left: 1em;
     }
 }
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 310px) {
     .dev-stats {
         flex-direction: column;
